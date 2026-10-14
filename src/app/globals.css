@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Filson Soft';
+  font-weight: 400;
+  src: url('/fonts/FilsonSoftRegular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filson Soft';
+  font-weight: 500;
+  src: url('/fonts/FilsonSoftMedium.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Mode';
+  font-weight: 600;
+  src: url('/fonts/IvyMode-SemiBold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/MillerBanner-Italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --font-sans: 'Filson Soft', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Ivy Mode', 'Playfair Display', Georgia, serif;
+  --font-italic: 'Miller Banner', Georgia, serif;
+
+  --neutral-100: #ffffff;
+  --neutral-300: #f8efdc;
+  --neutral-900: #141414;
+  --primary-300: #f5dbca;
+  --primary-500: #de2b2b;
+  --primary-900: #7c2627;
+  --secondary-500: #91964f;
+  --secondary-700: #273e2a;
+  --cyan-500: #75c2bd;
+  --orange-500: #e58833;
+  --blue-500: #263150;
+}
+
+html {
+  background-color: #f8efdc;
+  color: #de2b2b;
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f8efdc;
+  color: #de2b2b;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Serif font utility matching delice.ca */
+.font-serif-display {
+  font-family: 'Ivy Mode', 'Playfair Display', Georgia, serif;
+}
+
+.font-editorial-italic {
+  font-family: 'Miller Banner', Georgia, serif;
+  font-style: italic;
+}
+
+/* Double rule retro lines matching delice.ca */
+.c-double-rule {
+  border: none;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  height: 4px;
+  opacity: 0.85;
+}
+
+/* Pill buttons matching delice.ca */
+.delight-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.delight-btn-white {
+  background-color: #ffffff;
+  color: #de2b2b;
+  border: 1px solid #ffffff;
+}
+
+.delight-btn-white:hover {
+  background-color: #f8efdc;
+  color: #7c2627;
+  transform: translateY(-1px);
+}
+
+.delight-btn-primary {
+  background-color: #de2b2b;
+  color: #f8efdc;
+  border: 1px solid #de2b2b;
+}
+
+.delight-btn-primary:hover {
+  background-color: #7c2627;
+  color: #f8efdc;
+  transform: translateY(-1px);
+}
+
+.delight-btn-light {
+  background-color: #f8efdc;
+  color: #de2b2b;
+  border: 1px solid #f8efdc;
+}
+
+.delight-btn-light:hover {
+  background-color: #ffffff;
+  color: #7c2627;
+  transform: translateY(-1px);
+}
